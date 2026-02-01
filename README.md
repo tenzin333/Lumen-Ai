@@ -1,6 +1,6 @@
 # Lumen AI Assistant
 
-![Lumen AI Logo](lumen.svg)
+![Lumen AI Logo](lumen.png)
 
 A powerful Chrome browser extension that brings intelligent AI assistance directly to any webpage. Get guided, context-aware responses powered by Groq's lightning-fast LLM API.
 

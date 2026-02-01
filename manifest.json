@@ -27,10 +27,10 @@
     }
   ],
   "icons": {
-    "16": "lumen.svg",
-    "32": "lumen.svg",
-    "48": "lumen.svg",
-    "128": "lumen.svg"
+    "16": "lumen.png",
+    "32": "lumen.png",
+    "48": "lumen.png",
+    "128": "lumen.png"
   },
   "options_page": "options.html",
   "content_security_policy": {
