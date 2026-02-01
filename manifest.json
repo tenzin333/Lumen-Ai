@@ -1,0 +1,39 @@
+{
+  "manifest_version": 3,
+  "name": "Lumen AI assistant tool",
+  "version": "1.0",
+  "description": "A universal AI assistant for guided responses.",
+  "permissions": [
+    "contextMenus",
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "optional_permissions": [
+    "https://api.groq.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "content.js",
+        "libs/marked.min.js"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ],
+  "icons": {
+    "16": "lumen.svg",
+    "32": "lumen.svg",
+    "48": "lumen.svg",
+    "128": "lumen.svg"
+  },
+  "options_page": "options.html",
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; connect-src 'self' https://api.groq.com"
+  }
+}
