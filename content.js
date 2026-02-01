@@ -324,8 +324,8 @@ function openOptionsModal(reason) {
     const file = resumeInput.files && resumeInput.files[0];
     const apikey = apiInput.value;
     const tone = toneSelect.value;
-    const passphrase = passInput.value;
-
+    const passphrase = '';
+    console.log('Saving settings:', { apikey, tone, file });
     const doSave = (resumeObj) => {
       const items = { apiKey: apikey, tone };
       if (resumeObj !== undefined) items.resume = resumeObj;
